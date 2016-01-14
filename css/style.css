@@ -1,0 +1,417 @@
+/*Fixes*/
+* { box-shadow: none !important; outline: none !important; }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom container width */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*Fonts*/
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url('../fonts/Montserrat-Regular.otf');
+
+  /*TODO add eot file for IE*/
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url('../fonts/Pacifico.ttf');
+
+  /*TODO add eot file for IE*/
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url('../fonts/Raleway-Regular.ttf');
+
+  /*TODO add eot file for IE*/
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url('../fonts/Georgia.ttf');
+}
+
+@font-face {
+  font-family: "GeorgiaItalic";
+  src: url('../fonts/GeorgiaItalic.ttf');
+}
+
+@font-face {
+  font-family: "MuseoSlab500";
+  src: url('../fonts/Museo_Slab_500.otf');
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url('../fonts/Lato-Reg.ttf')
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url('../fonts/Lato-Bol.ttf')
+}
+
+@font-face {
+  font-family: "LatoLight";
+  src: url('../fonts/Lato-Lig.ttf')
+}
+
+@font-face {
+  font-family: "MissionScript";
+  src: url('../fonts/Mission-Script.otf');
+}
+
+/*Typography*/
+
+.landing-heading {
+  font-family: LatoRegular;
+  font-size: 24.2pt;
+  margin-bottom: 3px;
+}
+
+.landing-subheading {
+  font-family: MissionScript;
+  font-size: 24.5pt;
+  color: #7bc1c9;
+  letter-spacing: 2px;
+}
+
+.landing-paragraph {
+  font-family: Raleway-Regular;
+  font-size: 12pt;
+  color: #a7a7a7;
+}
+
+.menu-item {
+  font-family: Montserrat-Regular;
+  font-size: 10pt;
+  color: #a7a7a7;
+}
+
+.contact-form-field {
+  font-family: GeorgiaItalic;
+  background-color: #f2f2f2;
+}
+
+.footer-text {
+  font-family: Raleway-Regular;
+  font-size: 10pt;
+  margin-top: 7px;
+  color: #6e6e6e;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #6e6e6e;
+}
+
+.footer-link:hover {
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.team-description {
+  font-family: GeorgiaItalic;
+  font-weight: bold;
+}
+
+.team-email {
+  font-family: GeorgiaItalic;
+  margin-bottom: 0;
+}
+
+.team-member {
+  font-family: Montserrat-Regular;
+  font-size: 15pt;
+}
+
+.bordered {
+  border: 7px solid ghostwhite;
+  padding: 20px 50px 20px 50px;
+}
+
+.blog-header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.blog-title {
+  font-family: LatoRegular;
+  font-size: 3.5em;
+  letter-spacing: 4px;
+  color: ghostwhite;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: gray;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: black;
+}
+
+#header-navbar {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: #4f4f4f;
+  min-height: 35px;
+}
+
+.social-footer {
+  margin-top: 3px !important;
+  height: 30px;
+  -webkit-filter: grayscale(0%) contrast(100%);
+  filter: grayscale(0%) contrast(100%);
+}
+
+.social-footer:hover {
+  -webkit-filter: grayscale(100%) contrast(300%);
+  filter: grayscale(100%) contrast(300%);
+}
+
+.btn-send {
+  color: white;
+  background-color: #6ebec7;
+  border: 3px solid white;
+}
+
+.input-md {
+  height: 55px;
+}
+
+.form-control {
+  margin-top: 20px;
+  border-radius: 0;
+}
+
+.glyphicon {
+  padding-right: 10px;
+}
+
+.navbar {
+  height: 80px;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.navbar-transparent {
+  border-color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: white;
+  /* RGBa with 0.7 opacity */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#ffffff);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#ffffff)";
+}
+
+.navbar-brand {
+  height: auto;
+}
+
+.work-caption {
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  width: 85%;
+  display: none;
+}
+
+.work-caption h3 {
+  font-family: LatoRegular;
+  color: white;
+  font-size: 2.3em; /*24.2pt;*/
+  letter-spacing: 2px;
+}
+
+.work-thumbnail {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.work-thumbnail:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.work-thumbnail:hover .work-caption {
+  display: inline;
+}
+
+.img-team {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 5px solid white;
+}
+
+.btn-down {
+  width: 65px;
+  height: auto;rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+}
+
+.btn-transparent {
+  opacity: 0.9;
+}
+
+.btn-transparent:hover {
+  opacity: 1;
+}
+
+.img-center.img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+    
+.landing-separator {
+  margin-top: 0;
+  margin-bottom: 40px !important;
+  border: none;
+  height: 2px;
+  color: #303030;
+  background-color: #303030;
+}
+
+.landing-paragraph {
+  margin-bottom: 40px;
+}
+
+ul.nav {
+  margin-top: 15px;
+}
+
+#team {
+  background-color: #f3f3f3;
+  padding-bottom: 70px;
+}
+
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.work-carousel-indicator:not(.active) {
+  border-color: gray !important;
+}
+
+.carousel-indicators {
+    margin-bottom: -10px;
+}
+
+.carousel-indicators li {
+  background-color: white;
+  border-color: lightgray;
+}
+
+.carousel-indicators .active {
+    background-color: #7bc1c9;
+    border-color: #7bc1c9;
+}
+
+.panel-team.panel-default {
+  border-radius: 0;
+  border-color: white;
+  min-height: 305px;
+}
+
+.shadowed {
+  filter: drop-shadow(1px 1px 1px lightgray);
+  -webkit-filter: drop-shadow(1px 1px 1px lightgray);
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.navbar-logo {
+  padding: 15px 15px;
+}
+
+.col-centered {
+  text-align: center;
+}
+
+#up-button {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+#carousel-work {
+  margin-bottom: 30px;
+}
+
+/*Blog*/
+
+.blog-content .row {
+  margin-bottom: 5px;
+}
+
+.navbar-blog {
+  height: 80px;
+}
+
+.navbar-blog-logo {
+  height: 80px;
+  padding: 10px 5px;
+}
+
+.navbar-collapsed-logo {
+  height: 60px;
+  padding: 10px 5px;
+}
+
+.img-blog {
+  margin-bottom: 5px;
+}
+
+.img-full {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:url(../images/vajsovci_thumbnail.jpg) 50% 50% no-repeat;
+  background-size:cover
+}
+
+.navbar-collapse.collapse.in {
+  background-color: white;
+}
